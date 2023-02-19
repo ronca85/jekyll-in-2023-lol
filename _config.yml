@@ -1,5 +1,5 @@
 # https://github.com/zerostaticthemes/jekyll-serif-theme#github-pages
-baseurl: "/jekyll-in-2023-lol/"
+baseurl: "/"
 
 collections:
   authors:
