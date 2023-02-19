@@ -1,6 +1,8 @@
 # https://github.com/zerostaticthemes/jekyll-serif-theme#github-pages
 # baseurl: "/jekyll-in-2023-lol/"
 
+lang: hr # overrides default en
+
 collections:
   authors:
     output: true
@@ -35,6 +37,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-github-metadata
+  # - jekyll-github-metadata # TODO - rate limited - setup at the end # https://docs.github.com/en/rest/overview/resources-in-the-rest-api?apiVersion=2022-11-28#rate-limiting
 
 # environment: production # overrides jekyll.environment which is the default
