@@ -85,13 +85,12 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
-  jekyll (~> 4.2)
+  jekyll
   jekyll-feed
   jekyll-github-metadata
   jekyll-seo-tag
   jekyll-sitemap
   wdm (>= 0.1.0)
-  webrick (~> 1.7)
 
 BUNDLED WITH
    2.4.6

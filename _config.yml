@@ -1,6 +1,5 @@
-url: ronca85.github.io
 # https://github.com/zerostaticthemes/jekyll-serif-theme#github-pages
-baseurl: "/jekyll-in-2023-lol/"
+# baseurl: "/jekyll-in-2023-lol/"
 
 collections:
   authors:
@@ -34,5 +33,3 @@ plugins:
   - jekyll-github-metadata
 
 # environment: production # overrides jekyll.environment which is the default
-
-remote_theme: ronca85/jekyll-in-2023-lol

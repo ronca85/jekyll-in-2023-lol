@@ -2,8 +2,8 @@
 
 source "https://rubygems.org"
 
-gem "webrick", "~> 1.7"
-gem "jekyll", "~> 4.2"
+# gem "rails"
+gem "jekyll"
 gem "jekyll-github-metadata"
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
