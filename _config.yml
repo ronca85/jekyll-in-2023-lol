@@ -1,7 +1,6 @@
 url: ronca85.github.io
-baseurl: '/'
 # https://github.com/zerostaticthemes/jekyll-serif-theme#github-pages
-# baseurl: "/jekyll-in-2023-lol/"
+baseurl: "/jekyll-in-2023-lol/"
 
 collections:
   authors:
