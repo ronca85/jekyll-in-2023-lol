@@ -1,3 +1,16 @@
 .current {
     background-color: gold;
 }
+
+
+
+.dev-only {
+    .info-layout {
+        position: fixed;
+        left: 0.5rem;
+        bottom: 0.5rem;
+        padding: 0.25em;
+        background-color: #e9e9e9;
+        font-size: 0.875rem;
+    }
+}

@@ -10,7 +10,27 @@
     {% seo %}
   </head>
   <body>
-    {% include navigation.html %}
+    <header>
+      <a href="/"><h1>LOGO</h1></a>
+      {% include navigation.html %}
+      <button>burger</button>
+    </header>
+    
     {{ content }}
+
+    <footer>
+      <a href="/"><h1>LOGO</h1></a>
+      {% include navigation.html %}
+      <a href="/privacy-policy">Privacy policy</a>
+    </footer>
+
+    {% if jekyll.environment == "development" %}
+    <div class="dev-only">
+      <div class="info-layout">
+        <code>layout: {{page.layout}}</code>
+      </div>
+    </div>
+    {% endif %}
+    
   </body>
 </html>

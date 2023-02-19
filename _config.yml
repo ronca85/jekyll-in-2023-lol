@@ -5,6 +5,11 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
       type: "authors"
     values:
       layout: "author"
@@ -22,5 +27,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-github-metadata
 
 # environment: production # overrides jekyll.environment which is the default
