@@ -12,6 +12,11 @@ defaults:
     values:
       layout: "page"
   - scope:
+      path: "blog"
+      type: "pages"
+    values:
+      layout: "blog"
+  - scope:
       path: ""
       type: "authors"
     values:

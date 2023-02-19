@@ -10,27 +10,30 @@
     {% seo %}
   </head>
   <body>
-    <header>
-      <a href="{{ "/" | relative_url }}"><h1>LOGO</h1></a>
-      {% include navigation.html %}
-      <button>burger</button>
-    </header>
-    
-    {{ content }}
+    <div class="body-content">
 
-    <footer>
-      <a href="{{ "/" | relative_url }}"><h1>LOGO</h1></a>
-      {% include navigation.html %}
-      <a href="{{ "/privacy-policy" | relative_url }}">Privacy policy</a>
-    </footer>
+      <header>
+        <a href="{{ "/" | relative_url }}"><h1>LOGO</h1></a>
+        {% include navigation.html %}
+        <button>burger</button>
+      </header>
+      
+      {{ content }}
 
-    {% if jekyll.environment == "development" %}
-    <div class="dev-only">
-      <div class="info-layout">
-        <code>layout: {{page.layout}}</code>
+      <footer>
+        <a href="{{ "/" | relative_url }}"><h1>LOGO</h1></a>
+        {% include navigation.html %}
+        <a href="{{ "/privacy-policy" | relative_url }}">Privacy policy</a>
+      </footer>
+
+      {% if jekyll.environment == "development" %}
+      <div class="dev-only">
+        <div class="info-layout">
+          <code>layout: {{page.layout}}</code>
+        </div>
       </div>
+      {% endif %}
+      
     </div>
-    {% endif %}
-    
   </body>
 </html>
