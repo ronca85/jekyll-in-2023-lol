@@ -3,6 +3,10 @@
 
 lang: hr # overrides default en
 
+brand_name: "Brand name logo"
+brand_logo: true # if false text will be displayed
+brand_svg: true # if false a png will be used
+
 collections:
   authors:
     output: true

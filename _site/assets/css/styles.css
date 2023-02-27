@@ -7,6 +7,10 @@
   color: gold;
 }
 
+a {
+  color: inherit;
+}
+
 html, body {
   height: 100%;
 }
@@ -29,12 +33,32 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 40px;
 }
 
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.is-visually-hidden:not(:focus):not(:active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.brand-link {
+  display: flex;
+  height: 100%;
+}
+.brand-link > svg {
+  pointer-events: none;
 }
 
 .current {
