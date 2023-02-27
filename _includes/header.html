@@ -1,11 +1,5 @@
 <header>
-  <a href="{{ "/" | relative_url }}" rel="author" {% if site.brand_logo %}class="brand-link"{% endif %}>
-    {% if site.brand_logo %}
-      {% include brand.html %}
-    {% else %}
-      <span>{{ site.brand_name }}</span>
-    {% endif %}
-  </a>
+  {% include brand/brand-link.html %}
   {% include navigation.html %}
   <button>burger</button>
 </header>

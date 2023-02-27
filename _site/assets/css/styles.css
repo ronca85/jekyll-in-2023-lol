@@ -36,10 +36,9 @@ header {
   height: 40px;
 }
 
-footer {
+.footer-layout {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
 .is-visually-hidden:not(:focus):not(:active) {
@@ -59,6 +58,10 @@ footer {
 }
 .brand-link > svg {
   pointer-events: none;
+}
+
+.footer-brand {
+  width: 40px;
 }
 
 .current {

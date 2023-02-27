@@ -1,5 +1,5 @@
 {% if site.brand_svg %}
-    {% include brand-logo.svg %}
+    {% include brand/brand-logo-svg.svg %}
     <span class="is-visually-hidden">{{ site.brand_name }}</span>
 {% else %}
     <img alt="{{ site.brand_name }}" src="{{ "assets/images/logo/brand-logo.png" | relative_url }}" draggable="false" />

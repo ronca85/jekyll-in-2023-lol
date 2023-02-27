@@ -1,5 +1,7 @@
-<footer>
-  <a href="{{ "/" | relative_url }}">LOGO</a>
+<footer class="footer-layout">
+  <div class="footer-brand">
+    {% include brand/brand-link.html %}
+  </div>
   {% include navigation.html %}
   {% include nav-legal.html %}
 </footer>
