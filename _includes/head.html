@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }}</title>
   {% seo %}
+  {% comment %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  {% endcomment %}
+  <link rel="preload" href="{{ '/assets/fonts/Mona-Sans-Regular.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/Zodiak-Black.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
   {% feed_meta %}
 
@@ -13,4 +20,24 @@
   {% endif %}
 
   {% include custom-head.html %}
+
+  <script>
+    try {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#020202')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    } catch (_) {}
+  </script>
+
+  <style> 
+  :root {
+    --dark-100: {{ site.css.dark_100 }};
+    --light-100: {{ site.css.light_100 }};
+    --font-family-base: "{{ site.css.font_base }}", Arial, sans-serif, -apple-system;
+    --font-family-heading: "{{ site.css.font_heading }}", serif, -apple-system;
+  }
+  </style>
 </head>
