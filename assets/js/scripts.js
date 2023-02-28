@@ -1,11 +1,10 @@
-var body = document.querySelector('body')
-var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
-var menuContainer = document.querySelector('#main-menu-mobile');
+var html = document.documentElement;
+var menuTrigger = document.querySelector('.js-nav-main-trigger');
 
 menuTrigger.onclick = function() {
-    menuContainer.classList.toggle('open');
+    html.classList.toggle('nav-main-open');
     menuTrigger.classList.toggle('is-active')
-    body.classList.toggle('lock-scroll')
+    html.classList.toggle('lock-scroll')
 }
 
 // custom
