@@ -20,26 +20,25 @@ settings:
 items:
   - title: Github
     short: gh
-    url: https://github.com/your_github_handle
+    url: https://github.com/YOUR_GITHUB_HANDLE
     filename: github
 
   - title: Gitlab
     short: gl
-    url: https://twitter.com/your_gitlab_handle
+    url: https://gitlab.com/YOUR_GITLAB_HANDLE
     filename: gitlab
-
-  - title: LinkedIn
-    short: in
-    url: https://www.linkedin.com/in/your_linkedin_handle
-    filename: linkedin
-
-  - title: Twitter
-    short: tw
-    url: https://twitter.com/your_twitter_handle
-    filename: twitter
 
   - title: Facebook
     short: fb
-    url: https://twitter.com/your_facebook_handle
+    url: https://facebook.com/YOUR_FACEBOOK_HANDLE
     filename: facebook
-    
+
+  - title: Twitter
+    short: tw
+    url: https://twitter.com/YOUR_TWITTER_HANDLE
+    filename: twitter
+
+  - title: LinkedIn
+    short: in
+    url: https://linkedin.com/in/YOUR_LINKEDIN_HANDLE
+    filename: linkedin
