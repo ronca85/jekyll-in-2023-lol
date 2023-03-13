@@ -13,8 +13,8 @@
     }
 }
 .intro-tagline {
-    line-height: 1.25;
-    font-size: 1.25em;
+    line-height: 1.157625;
+    font-size: calc(1rem * 2.25);
 
     @include media-breakpoint-up(lg) {
         font-size: 1.375em;

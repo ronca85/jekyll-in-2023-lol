@@ -79,6 +79,10 @@
         & > * {
             pointer-events: none;
         }
+
+        svg {
+            stroke-width: calc(var(--mobile-nav-trigger-width) / var(--mobile-nav-trigger-width));
+        }
     }
     
     .nav-main-trigger-icon-menu {

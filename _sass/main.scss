@@ -7,7 +7,7 @@ html {
     background-color: var(--paper);
     color: var(--ink);
     font-family: var(--font-family-base);
-    line-height: 1.5;
+    line-height: 1.55133;
     scroll-behavior: smooth;
 }
 
@@ -65,6 +65,9 @@ html, body, .body-content, .page-content {
     & > svg {
         fill: currentColor;
         pointer-events: none;
+        fill: none;
+        stroke-width: calc(var(--mobile-nav-trigger-width) / var(--mobile-nav-trigger-width));
+        stroke: currentColor;
     }
 
     .header-brand & {
