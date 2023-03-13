@@ -1,8 +1,91 @@
 - name: Home
   link: /
+  weight: 10
+  
 - name: About
-  link: /about.html
-- name: Blog
-  link: /blog.html
-- name: Staff
-  link: /staff.html
+  # link: /about.html # submenu will be ignored if link is enabled exists
+  weight: 20
+  submenu:
+  - name: About us
+    link: /about.html # if submenu exists use link to page inside the submenu
+    weight: 10
+
+  - name: Team
+    link: /team.html
+    weight: 20
+
+  - name: Contact
+    link: /contact.html
+    weight: 30
+  
+# - name: Materials
+#   weight: 25
+#   submenu:
+#   - name: All Materials
+#     link: /all-materials.html
+#     weight: 0
+    
+#   - name: Metal
+#     link: /metal.html
+#     weight: 10
+
+#   - name: Wood
+#     link: /wood.html
+#     weight: 20
+    
+#   - name: Plastic
+#     link: /plastic.html
+#     weight: 30
+
+- name: Products
+  # link: /products.html
+  weight: 30
+  submenu:
+    - name: Product 1
+      link: /product-1/
+      weight: 10
+      
+    - name: Product 2
+      link: /product-2/
+      weight: 20
+      
+    - name: Product 3
+      link: /product-3/
+      weight: 30
+      
+    - name: Product 4
+      link: /product-4/
+      weight: 40
+      
+    - name: Product 5
+      link: /product-5/
+      weight: 50
+      
+# - name: Blog
+#   link: /blog.html
+#   weight: 40
+    
+- name: Resources
+  # link: /resources.html
+  weight: 60
+  submenu:
+    - name: Github
+      link: https://github.com/kurianinc/ami-pub
+      weight: 10
+      
+    - name: Kurian DevOps Blog
+      link: https://kurianinc.medium.com/
+      weight: 20
+      
+    - name: AWS Marketplace Listing
+      link: https://aws.amazon.com/marketplace/search/
+      weight: 30
+      
+    - name: Facebook page
+      link: https://www.facebook.com/kurianinc/
+      weight: 40
+
+- name: Contact
+  link: /contact.html
+  is_button: true
+  weight: 1000

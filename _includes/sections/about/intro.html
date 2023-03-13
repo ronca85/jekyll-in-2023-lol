@@ -1,0 +1,38 @@
+{% assign item = site.data.section-about-intro %}
+<section class="section-about-intro">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1">
+                <div class="section-copy pb-5 px-lg-5">
+                    {% if item.section_label %}
+                    <p class="section-label">
+                        {{ item.section_label }}
+                    </p>
+                    {% endif %}
+                    <h2 class="section-heading">{{ item.section_heading }}</h2>
+
+                    {% if item.paragraph_1 %}<p>{{ item.paragraph_1 }}</p>{% endif %}
+                    {% if item.paragraph_2 %}<p>{{ item.paragraph_2 }}</p>{% endif %}
+                    {% if item.paragraph_3 %}<p>{{ item.paragraph_3 }}</p>{% endif %}
+
+                    {% assign buttons = site.data.buttons.about_intro %}
+                    {%- if buttons -%}
+                    <div class="section-buttons">
+                        {%- for item in buttons -%}
+                        {% assign button_style = item.style %}
+                        <a class="button {% if item.style == 'primary' %}button-primary {% elsif item.style == 'outline' %}button-outline {% endif %}" href="{{ item.link | relative_url }}">{{ item.label | escape }}</a>
+                        {%- endfor -%}
+                    </div>
+                    {%- endif -%}
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="o-ratio o-ratio-5:4 media-rounded">
+                    {% if item.image %}
+                    <img draggable="false" alt="{{ item.title }}" src="{{ item.image | relative_url }}" />
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

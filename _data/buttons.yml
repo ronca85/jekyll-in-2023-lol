@@ -1,0 +1,51 @@
+homepage_intro:
+    - style: outline
+      label: Discover more
+      link: about
+    - style: primary
+      label: Book now
+      link: https://app.nexhealth.com/appt/swish-oral-care
+    - style: 
+      label: Contact
+      link: contact
+homepage_work:
+    - style: primary
+      label: See all of our work
+      link: work
+homepage_products:
+    - style: primary
+      label: See our products
+      link: products
+homepage_team:
+    - style: primary
+      label: Meet the team
+      link: team
+homepage_posts:
+    - style: primary
+      label: See all posts
+      link: blog
+homepage_careers:
+    - style: primary
+      label: See all jobs
+      link: careers
+about_intro:
+    - style: primary
+      label: Contact
+      link: contact
+
+work:
+    - style: primary
+      label: Back to work page
+      link: work
+products:
+    - style: primary
+      label: Back to products page
+      link: products
+team_member:
+    - style: primary
+      label: Back to team page
+      link: team
+blog_post:
+    - style: primary
+      label: Back to blog posts
+      link: blog

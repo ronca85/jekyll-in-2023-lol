@@ -1,9 +1,24 @@
-<footer class="footer-layout">
-  <div class="footer-brand">
-    {% include brand/brand-link.html %}
+<footer class="footer">
+  <div class="container">
+    <div class="footer-layout">
+      
+      <div class="footer-socials">
+        {% include footer/nav-social.html %}
+      </div>
+      
+      <div class="footer-nav-legal">
+        {% include footer/nav-legal.html %}
+      </div>
+
+      <div class="footer-end">
+        <div class="footer-copyright">
+          <div class="footer-brand">
+            {% include brand/brand-link.html %}
+          </div>
+          {% include footer/copyright.html %}
+        </div>
+      </div>
+
+    </div>
   </div>
-  {% include navigation.html %}
-  {% include footer/nav-social.html %}
-  {% include footer/nav-legal.html %}
-  {% include footer/copyright.html %}
 </footer>

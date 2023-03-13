@@ -3,8 +3,27 @@ layout: default
 ---
 
 <div class="page-content">
-    <main>
-        <h1>{{ page.title }}</h1>
-        {{ content }}
+    <main class="page-layout">
+        {% if page.heading %}
+        <section class="page-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h1 class="section-heading">{{ page.heading }}</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+        <div {% if site.a11y_skip %}id="main-content"{% endif %}></div>
+        <section class="page-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        {{ content }}
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </div>

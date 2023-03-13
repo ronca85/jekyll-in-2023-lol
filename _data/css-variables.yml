@@ -1,0 +1,87 @@
+css:
+    selection_bg: '#f1b742'
+    selection_text: '#ffe8d9'
+
+    theme_color_meta_mask: '#ffe8d9'
+    theme_color_meta_tile: '#ffe8d9'
+    theme_color_meta_name: '#ffe8d9'
+
+    theme_color_main: '#826ee7' # use for accents like buttons
+
+    paper: '#ffe8d9'
+    ink: '#101218'
+
+    header_height: '4em'
+    # header_bg: '#fff6e4'
+    # header_text_color: '#826ee7'
+    header_brand_link_width: '70px'
+  
+    footer_padding_top: '2.5em'
+    footer_padding_bottom: '0.5em'
+    # footer_bg: '#fff6e4'
+    footer_brand_link_width: '40px'
+    footer_socials_space_between_items: '0.5em'
+    footer_socials_text_size: '125%' # % of the text size when icons are disabled
+    # footer_socials_short_text_bg: '#e1d9fe'
+    footer_socials_short_icon_size: '1.25em'
+    
+    mobile_nav_trigger_width: '2em'
+    # mobile_nav_bg: '#826ee7'
+    # mobile_nav_color: '#826ee7'
+    # mobile_current_bg: '#f1b742'
+    # mobile_submenu_bg: '#d4caff'
+  
+    # desktop_current_bg: '#f1b742'
+    # desktop_nav_color: '#826ee7'
+    desktop_nav_distance_from_edge: '0.5em'
+    desktop_nav_space_between_items: '1.5em'
+    desktop_nav_text_size_factor: '130%'
+    desktop_nav_submenu_text_size_factor: '85%' # % of the nav text size
+    # desktop_nav_link_hover_bg: '#e1d9fe'
+    # desktop_nav_submenu_bg: '#826ee7'
+    # desktop_nav_submenu_hover_bg: '#f1b742'
+    desktop_nav_submenu_width: '16rem'
+  
+    button_basic_bg: 'transparent'
+    button_basic_hover_bg: '#ffffff'
+  
+    button_primary_bg: '#826ee7 '
+    button_primary_hover_bg: '#ffffff'
+    # button_primary_label: '#222222'
+    # button_primary_hover_label: '#222222'
+  
+    button_outline_color: '#826ee7 '
+    # button_outline_hover_bg: '#ffffff'
+    # button_outline_hover_color: '#826ee7'
+  
+    # section_intro_bg: '#fff6e4'
+    # section_work_bg: '#e1d9fe'
+    # section_products_bg: '#fff6e4'
+    # section_team_bg: '#e1d9fe'
+    # section_posts_bg: '#fff6e4'
+    # section_careers_bg: '#e1d9fe'
+    # section_about_intro_bg: '#fff6e4'
+    
+    # section_intro_text_color: '#826ee7' # you can override body text color (ink) for each section on the homepage
+    # section_work_text_color: '#826ee7'
+    # section_products_text_color: '#826ee7'
+    # section_team_text_color: '#826ee7'
+    # section_posts_text_color: '#826ee7'
+    # section_careers_text_color: '#826ee7'
+    # section_about_intro_text_color: '#826ee7'
+
+    # list_card_border_color: '#57499b'
+    # list_card_hover_bg: '#d4caff'
+    
+    transition_duration_slow: '0.9s'
+    transition_duration_fast: '0.3s'
+    transition_duration_fastest: '0.1s'
+    easing: 'cubic-bezier(.4,0,0,1)'
+  
+    # using github's free font Mona Sans - https://github.com/github/mona-sans
+    font_base: Mona Sans Regular
+    # using fontshare's free font Zodiak - https://www.fontshare.com/fonts/zodiak
+    # font_heading: Zodiak-Black
+    # using fontshare's free font Literata - https://www.fontshare.com/fonts/literata
+    font_heading: Literata-Bold
+    

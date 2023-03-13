@@ -1,78 +1,77 @@
-html {
-    font-family: var(--font-family-base);
+::selection {
+    background-color: var(--selection-bg);
+    color: var(--selection-text);
 }
 
-html.dark {
-    color-scheme: dark;
+html {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-family-base);
+    line-height: 1.5;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-heading);
 }
 
-html, body {
+html, body, .body-content, .page-content {
     height: 100%;
 }
 
 .body-content {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    // min-height: 100vh;
 }
 
 .scroll-content {
     flex-grow: 1;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
+.page-content {
+    padding-top: var(--header-height);
 }
 
-.footer-layout {
-    display: flex;
-    flex-direction: column;
+.page-layout {
+    height: 100%;
 }
 
-.is-visually-hidden:not(:focus):not(:active) {
-    clip: rect(1px 1px 1px 1px); 
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%); 
-    height: 1px; 
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+.page-intro {
+    padding-top: 3em;
+    margin-bottom: 4em;
 }
+
+.page-body {
+    margin-top: 3em;
+    padding-bottom: 4em;
+}
+
+
+
+.company-name {
+    text-decoration: none;
+}
+
 
 .brand-link {
     display: flex;
-    height: 100%;
 
-    & > svg {
+    & > img {
+        width: 100%;
         pointer-events: none;
     }
+
+    & > svg {
+        fill: currentColor;
+        pointer-events: none;
+    }
+
+    .header-brand & {
+        width: var(--header-brand-link-width);
+    }
+    
+    .footer-brand & {
+        width: var(--footer-brand-link-width);
+    }
 }
-
-.footer-brand {
-    width: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.current {
-    background-color: gold;
-}
-
-

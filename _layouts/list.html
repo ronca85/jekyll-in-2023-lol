@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="page-content">
+    <main class="page-layout">
+        <section class="page-intro">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        {% if page.heading %}
+                        <h1 class="section-heading">{{ page.heading }}</h1>
+                        {% endif %}
+                        {% if page.synopsis %}
+                        <p class="section-synopsis">{{ page.synopsis }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div {% if site.a11y_skip %}id="main-content"{% endif %}></div>
+        <section class="page-body">
+            <div class="container">
+                {{ content }}
+            </div>
+        </section>
+    </main>
+</div>

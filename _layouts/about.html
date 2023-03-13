@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="page-content">
+    <main class="page-layout">
+        {% if page.sections %}
+            <div class="a11y-aligner" {% if site.a11y_skip %}id="main-content"{% endif %}></div>
+            {% if page.sections.intro %}{% include {{ page.sections.intro }} %}{% endif %}
+            {% if page.sections.work %}{% include {{ page.sections.work }} %}{% endif %}
+            {% if page.sections.products %}{% include {{ page.sections.products }} %}{% endif %}
+            {% if page.sections.team %}{% include {{ page.sections.team }} %}{% endif %}
+            {% if page.sections.posts %}{% include {{ page.sections.posts }} %}{% endif %}
+            {% if page.sections.careers %}{% include {{ page.sections.careers }} %}{% endif %}
+        {% else %}
+
+            {% if page.heading %}
+            <section class="page-intro">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h1 class="section-heading">{{ page.heading }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+            <div class="a11y-aligner" {% if site.a11y_skip %}id="main-content"{% endif %}></div>
+            <section class="page-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+    </main>
+</div>
